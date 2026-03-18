@@ -1,0 +1,9 @@
+[build]
+builder = "NIXPACKS"
+
+[deploy]
+startCommand = "docker compose up -d"
+
+[[services]]
+image = "frappe/erpnext:v15"
+ports = ["8000:8000"]
